@@ -67,6 +67,7 @@ body {
     justify-content: center;
     align-items: center;
     border: none;
+    outline: none;
 
 }
 
@@ -82,7 +83,7 @@ body {
     font-size: 18px;
     padding-left: 60px;
     color: inherit;
-
+    outline: none;
 }
 
 
@@ -90,6 +91,10 @@ body {
     height: 100%;
     width: 25%;
     margin-left: -5%;
+}
+.searchBtn:hover {
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .searchBtn {
@@ -120,6 +125,10 @@ body {
     color: linear-gradient(to right bottom, #fbdb89, #f48982);
 
 }
+.addRecipe:hover{
+    background-color:rgb(231, 222, 222);
+    cursor: pointer;
+}
 
 .bookmark {
     height: 100%;
@@ -132,13 +141,16 @@ body {
 
 .bookmark i {
     margin-right: 7px;
-    background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+    /* background-image: linear-gradient(to right bottom, #fbdb89, #f48982); */
 }
-
+.bookmark:hover{
+    background-color:rgb(231, 222, 222);
+    cursor: pointer;
+}
 
 .mainSection{
     width: 100%;
-    height: 80%;
+    height:auto;
     /* background-color: white; */
     border-radius: 10px;
     display:flex;
@@ -146,14 +158,178 @@ body {
 
 .nameSection{
     width: 30%;
-    height: 100%;
+    height: auto;
     background-color:white;
     border-bottom-left-radius: 10px;
+    
 }
+
+.item{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.profile{
+    /* width: 70px;
+    height: 70px; */
+    border-radius: 50%;
+    /* background-image: url(./Assets/Spring_Pasta-removebg-preview\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+.profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.recipe{
+    width: 200px;
+    height: 70px;
+    /* background-color: pink; */
+}
+
+.name {
+    width: 200px;
+    height: 35px;
+    font-size: 20px;
+    color: red;
+    overflow: hidden;
+    /* background-color: aquamarine; */
+    /* margin: 0;
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; */
+}
+
+.description{
+    color: rgba(53, 24, 24, 0.479);
+    margin-top: -20px;
+}
+
+.lastPara{
+    margin-top: 50px;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+
+
+
 
 .recipeSection{
     width: 70%;
-    height: 100%;
+    height: auto;
+    background-color: #f9f5f3;
     /* background-color: peru; */
     border-bottom-right-radius: 10px;
+}
+
+.display-bar {
+    width: 65%;
+    height: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.display-image {
+    width: 100%;
+    height: 320px;
+}
+
+.display-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.display-first-area {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.display-first-area .time i{
+    color: #f48982;
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.minutes {
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.serving i {
+    color: #f48982;
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.numberServe {
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.plusMinus {
+    color: #f48982;
+    font-size: 1.3rem;
+    margin-left: -40px;
+}
+
+.bookmarksArea {
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(45deg, #fbd89f, #f48982);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.recipeIngredients {
+    height: 500px;
+    width: 100%;
+    background-color:#e8dfda;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 30px 0px;
+}
+
+.recipeIngredients h3 {
+    color: #f48982;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.Ingredients {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+.Ingredients i {
+    color: #f48982;
+    font-size: 1.3rem;
+    margin-right: -80px
+
 }
